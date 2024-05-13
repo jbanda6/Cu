@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinary Community Corner</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section#home {
+            text-align: center;
+            margin-top: 50px;
+        }
+        section#home h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        section#home p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive Styles */
+        @media(max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse Recipes</a></li>
+                <li><a href="search.html">Search Recipes</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Home Page Content -->
+        <section id="home">
+            <h1>Welcome to Culinary Community Corner!</h1>
+            <p>Discover, share, and save delicious recipes!</p>
+            <!-- Button for interactive feature -->
+            <button onclick="changeBackgroundColor()">Change Background Color</button>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Culinary Community Corner. All rights reserved.</p>
+    </footer>
+
+    <!-- Script for interactive feature -->
+    <script>
+        // Function to change background color
+        function changeBackgroundColor() {
+            // Generate random color
+            var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            // Set background color of body
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
